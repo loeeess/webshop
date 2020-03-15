@@ -1,0 +1,29 @@
+.center{
+    width: 60%;
+    margin: auto;
+    display: block;
+    font-family: Unlock,Arial, Helvetica, sans-serif;
+}
+.button{
+    color: black;
+    background-color: #FFC312;
+    margin-top: 20px;
+}
+.button:hover{
+    background-color: white	;
+}
+.vertical-center{
+    padding-top: 13%;
+}
+  
+@media screen and (max-width: 1000px) {
+  
+    .vertical-center{
+        padding-top: 8%;
+    }
+  
+    .center{
+      width: 50%;
+      margin-left: 25%;
+    }
+}

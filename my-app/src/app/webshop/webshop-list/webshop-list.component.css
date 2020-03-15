@@ -1,0 +1,14 @@
+app-webshop-item {
+    margin: 0;
+  }
+  
+  .row {
+    float: none;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .content-wrapper {
+    margin: auto;
+  }

@@ -1,0 +1,8 @@
+<div content-wrapper>
+  <div class="row">
+    <app-webshop-item
+      *ngFor="let product of products; let i = index"
+      [item]="product"
+      [index]="i"></app-webshop-item>
+  </div>
+</div>

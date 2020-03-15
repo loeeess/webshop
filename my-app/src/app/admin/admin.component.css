@@ -1,0 +1,41 @@
+
+.sized {
+    max-width: 10%;
+    background-color: #fffffa;
+    height: auto;
+    border: 5px solid #000000;
+    border-radius: 25px;
+}
+
+.buyImage {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+ .container {
+    background-color: #f2f2f2;
+    width: auto;
+  }
+  
+  .image {
+    height: 500px;
+    width: 500px;
+  }
+  
+  .buy {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .empty {
+    text-align: center;
+  }
+  .col-md-3 {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+  }

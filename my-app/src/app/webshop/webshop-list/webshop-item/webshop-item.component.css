@@ -1,0 +1,33 @@
+a {
+    color: white;
+    background-color: transparent;
+  }
+  
+  a:hover {
+    background-color: white;
+    transition: .30s;
+  }
+  
+  li:focus {
+    outline: none;
+  }
+  
+  h5 {
+    text-align: center;
+    color: #000;
+  }
+  
+  p {
+    text-align: center;
+    color: #000;
+  }
+  
+  .card-body {
+    padding: 0;
+  }
+
+.sized {
+    max-width: 10%;
+    background-color: #fffffa;
+    height: auto;
+}

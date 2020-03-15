@@ -1,0 +1,41 @@
+<div class="container">
+  <div *ngIf="products.length > 0; else noProducts"class="col-12">
+    <hr>
+    <div *ngFor="let product of products; let i = index">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="buyImage" [src]="product.product.image">
+        </div>
+        <div class="col">
+          <h2>{{product.product.name}}</h2>
+          <div class="col-md2">
+            <form [formGroup]="forms[i]" (focusout)="onSubmit(i)">
+              <input type="number" min="0" [formControl]="forms[i].controls['amount']">
+              <button type="submit" class="btn btn-success">Change</button>
+            </form>
+            <h4>Per product: € {{product.product.price | number : '1.2-2'}}</h4>
+            <h4>Total: € {{ product.product.price * product.amount | number : '1.2-2'}} </h4>
+          </div>
+          <button class="btn btn-danger" (click)=deleteProduct(i)>Delete</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div *ngIf="products.length > 0">
+    <div class="row">
+      <div class="col">
+          <a href="https://paypal.me/Lcrama/ {{ totalPrice }}" class="btn btn-success">Check out</a>
+      </div>
+      <div class="col">
+        <h2>Total amount = {{ totalPrice | number : '1.2-2'}}</h2>
+      </div>
+    </div>
+  </div>
+  <ng-template  #noProducts>
+    <div class="col-md-12 empty">
+      <h2>The shopping cart is empty!</h2>
+    </div>
+  </ng-template>
+</div>
