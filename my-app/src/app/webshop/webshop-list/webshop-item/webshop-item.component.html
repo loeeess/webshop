@@ -1,9 +1,5 @@
-<div class = "card-body" [routerLink]="item.id">
-  <a [routerLink] = "[index]" class = "list-group-item clearfix">
-    <span>
-        <img class="sized" [src] = "item.image">
-    </span>
-    <h4>{{ item.name }}</h4>
-    <h4>€{{ item.price }}</h4>
-  </a>
+<div class="product-card" [routerLink]="item.id">
+    <img class="sized" [src] = "item.image">
+    <p>{{ item.name }}</p>
+    <p>€{{ item.price }}</p>
 </div>

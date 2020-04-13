@@ -1,6 +1,6 @@
 <div class="header">
   <div class="logo" [routerLink]="['/shop']" id="headerLogo">aesthetically</div>
-  <p>stuff you don't need but only want because of the hype.</p>
+  <p class="description">stuff you don't need but only want because of the hype.</p>
   <div class="content" *ngIf="isLoggedIn()">
     <div *ngIf="isAdmin()" routerLink="/admin">admin</div>
     <div routerLink="/cart">cart</div>

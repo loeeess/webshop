@@ -2,20 +2,17 @@
     width: 60%;
     margin: auto;
     display: block;
-    font-family: Unlock,Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 .button{
-    color: black;
-    background-color: #FFC312;
-    margin-top: 20px;
+    margin: auto;
+    display: block;
 }
-.button:hover{
-    background-color: white	;
-}
+
 .vertical-center{
-    padding-top: 13%;
+    margin: auto;
 }
-  
+
 @media screen and (max-width: 1000px) {
   
     .vertical-center{

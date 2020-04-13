@@ -1,11 +1,11 @@
-#Login info
+# Login info
 
 user (role: user)
 * email: user@user.com
-* wachtwoord: user
+* password: user
 
 admin (role: admin)
 * email: admin@admin.com
-* wachtwoord: admin
+* password: admin
 
 

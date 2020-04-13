@@ -1,33 +1,20 @@
-a {
-    color: white;
-    background-color: transparent;
-  }
-  
-  a:hover {
-    background-color: white;
-    transition: .30s;
-  }
-  
-  li:focus {
-    outline: none;
-  }
-  
-  h5 {
-    text-align: center;
-    color: #000;
-  }
-  
-  p {
-    text-align: center;
-    color: #000;
-  }
-  
-  .card-body {
-    padding: 0;
-  }
+.product-card{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  word-break: break-all;
+  color: #7e174d;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  background-color: #7e174d;
+  color: white;
+}
+
 
 .sized {
-    max-width: 10%;
-    background-color: #fffffa;
-    height: auto;
+    width: 300px;
 }

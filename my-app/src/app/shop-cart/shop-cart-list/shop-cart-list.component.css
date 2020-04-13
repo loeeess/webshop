@@ -14,7 +14,6 @@
 }
 
  .container {
-    background-color: #f2f2f2;
     width: auto;
   }
   
@@ -29,12 +28,20 @@
     text-align: center;
   }
 
-  .empty {
-    text-align: center;
-  }
   .col-md-3 {
     float: none;
     display: inline-block;
     text-align: center;
     justify-content: center;
   }
+
+  .productless {
+    font-size: 20px;
+    text-align: center;
+  }
+
+h2{
+    font-weight: bold;
+    color: #7e174d;
+    padding: 10px;
+}

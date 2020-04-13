@@ -20,7 +20,25 @@ VALUES
 (DEFAULT, 'Scrunchie', 
  4.95, 
  'An elegant hair tie made with a lustrous satin fabric.', 
- 'https://cdn.webshopapp.com/shops/238922/files/311744048/fashion-click-scrunchie-leopard-velvet.jpg?_ga=2.114437378.400751633.1584288349-687456565.1584288349');
+ 'https://cdn.webshopapp.com/shops/238922/files/311744048/fashion-click-scrunchie-leopard-velvet.jpg?_ga=2.114437378.400751633.1584288349-687456565.1584288349'),
+ (DEFAULT, 'Fujifilm Instax Mini 9', 
+ 89.90, 
+ 'Snap instant, retro-inspired photos and selfies with the Fujifilm Instax Mini 9 instant camera.', 
+ 'https://www.partydeco.nl/media/cache/catalog/product/0/9/700x700_co_ar_tr_fr_bc_100/094-011_instax_mini_9_ice_blue.jpg'),
+ (DEFAULT, 'Mario Badescu Facial Spray', 
+ 10.00, 
+ 'Mario Badescu Facial Spray with Aloe, Cucumber, and Green Tea rehydrates, invigorates, and tones.', 
+ 'https://www.themakeupspot.nl/media/image/d9/07/9d/Mario-Badescu-Rosewater-Spray-118ml_600x600.jpg'),
+ (DEFAULT, 'Vans Old Skool Sneakers', 
+ 79.99, 
+ 'They say true style never goes out of fashion, and the Vans Old Skool is a staple trainer for any collection.', 
+ 'https://images.vans.com/is/image/VansEU/VN000D3HY28-HERO?$PDP-FULL-IMAGE$'),
+ (DEFAULT, 'Art Socks: The Great Wave', 13.95, 'Show your love for art and the ocean with these fun and cool socks.', 
+ 'https://cdn.shopify.com/s/files/1/0028/8410/8401/products/The_Great_Wave_off_Kanagawa_1200x1200.jpg?v=1575401141'),
+ (DEFAULT, 'Burt''s Bees Lip Balm', 4.95, 'Burt''s Bees Moisturizing Lip Balm, rejuvenates and beautifies lips naturally with a sweet flavor.',
+ 'https://media.douglas-shop.com/sgf/nl/523942/900_0/Burt_s_Bees-Lippen-Beeswax_Lip_Balm.jpg?imwidth=720'),
+ (DEFAULT, 'Tony Moly Aloe Face Mask', 6.95, 'I''m Real Aloe Mask Sheet Water type essence mask provide quick moisture to skin.',
+ 'https://images.ulta.com/is/image/Ulta/2292433?op_sharpen=1&resMode=bilin&qlt=85&wid=800&hei=800&fmt=jpg');
 
 INSERT INTO user
 VALUES
