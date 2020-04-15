@@ -38,7 +38,13 @@ VALUES
  (DEFAULT, 'Burt''s Bees Lip Balm', 4.95, 'Burt''s Bees Moisturizing Lip Balm, rejuvenates and beautifies lips naturally with a sweet flavor.',
  'https://media.douglas-shop.com/sgf/nl/523942/900_0/Burt_s_Bees-Lippen-Beeswax_Lip_Balm.jpg?imwidth=720'),
  (DEFAULT, 'Tony Moly Aloe Face Mask', 6.95, 'I''m Real Aloe Mask Sheet Water type essence mask provide quick moisture to skin.',
- 'https://images.ulta.com/is/image/Ulta/2292433?op_sharpen=1&resMode=bilin&qlt=85&wid=800&hei=800&fmt=jpg');
+ 'https://images.ulta.com/is/image/Ulta/2292433?op_sharpen=1&resMode=bilin&qlt=85&wid=800&hei=800&fmt=jpg'),
+ (DEFAULT, 'Tyler, The Creator - Flower Boy CD', 13.95, 'Flower Boy is the fourth studio album by American rapper Tyler, the Creator.',
+ 'https://upload.wikimedia.org/wikipedia/en/c/c3/Tyler%2C_the_Creator_-_Flower_Boy.png'),
+ (DEFAULT, 'Wildflower Blue Phone Case', 22.50, 'Don''t you know, plaid goes with EVERYTHING, especially on phones.', 
+'https://di2ponv0v5otw.cloudfront.net/posts/2018/07/23/5b567bf645c8b3e7d778d6a1/m_5b567c7a800deeef736db59e.jpg'),
+(DEFAULT, 'AirPods Case Pink Silicone', 9.95, 'Ultra Lightweight Protective Case For Your Apple AirPods.', 
+'https://ae01.alicdn.com/kf/HTB1fXDTbEKF3KVjSZFEq6xExFXaK.jpg');
 
 INSERT INTO user
 VALUES

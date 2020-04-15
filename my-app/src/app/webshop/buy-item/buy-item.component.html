@@ -1,28 +1,20 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <img class="image" [src]="item.image">
-    </div>
+<div class="item-box">
+  <div class="image-box">
+    <img class="image" [src]="item.image">
+  </div>
 
-    <div class="col-md6">
-      <h1> {{item.name}}</h1>
-      <h3> {{ item.description}} </h3>
+  <div class="text-box">
+    <h1> {{item.name}}</h1>
+    <p> {{ item.description}} </p>
+    <h4> €{{item.price}}</h4>
 
-      <div class="buy">
-        <div class="row">
-          <div class="col-md-4">
-            <img class="buyImage" [src] = "item.image">
-            <h4> €{{item.price}}</h4>
-          </div>
-          <div class = "col-md-3">
-            <button class="btn btn-success" (click)="addToShopCart()">Add</button>
-          </div>
-          <div class = "col-md-3">
-            <button class="btn btn-danger" routerLink="/shop">Back</button>
-          </div>
-        </div>
-          <input type="number" #amount (focusout)= "setAmount(amount)" value="1" min="1" step="1" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control">
-      </div>
+    <div class="buy-box">
+      <h5>amount in cart:</h5>
+      <input class="form-control" type="number" #amount (focusout)= "setAmount(amount)" value="1" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100">
+      <button class="button" (click)="addToShopCart()">add</button>
+      <button class="button" routerLink="/shop">back</button>
     </div>
   </div>
+
 </div>
+

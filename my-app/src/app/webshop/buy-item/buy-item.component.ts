@@ -11,7 +11,7 @@ import { BuyProduct } from '../buyproduct.model';
 })
 export class BuyItemComponent implements OnInit {
   item: Product;
-  amount: number = 0;
+  amount: number = 1;
   constructor(private route: ActivatedRoute, private shopcart: ShopCartService) { }
 
   ngOnInit() {
@@ -28,13 +28,13 @@ export class BuyItemComponent implements OnInit {
       return;
     }
     this.shopcart.push(new BuyProduct(this.item, Number(this.amount)));
-    var s = "Added " + this.amount + " " + this.item.name + "'s to the shopping cart!";
+    var s = "Added " + this.amount + " " + this.item.name + "(s) to the shopping cart";
     alert(s);
   }
 
   setAmount(amount) {
     if (amount.value < 1) {
-      alert("The amount must greater than 0!");
+      alert("Buying nothing? Not cool.");
       return;
     }
     console.log("SET amount");

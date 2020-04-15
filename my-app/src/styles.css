@@ -32,3 +32,8 @@ body {
 .button:hover{
     background-color: #7e174d;
 }
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  color: #7e174d;
+}
