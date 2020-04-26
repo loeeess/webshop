@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Product } from '../webshop/product.model';
 import { BuyProduct } from '../webshop/buyproduct.model';
 
 @Injectable({
@@ -11,7 +10,6 @@ export class ShopCartService {
   constructor() { }
 
   getProducts() {
-    //q 3console.log(this.products)
     return this.products.slice()
   }
 

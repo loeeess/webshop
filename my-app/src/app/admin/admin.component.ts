@@ -45,7 +45,7 @@ export class AdminComponent implements OnInit {
 
     this.productService.createProduct(product).subscribe(
       (c: any) => {
-        alert("Added " + product.name + " to the shop!");
+        alert("Added " + product.name + " to the shop.");
       },
       (err) => {
         console.log(err)
@@ -67,7 +67,7 @@ export class AdminComponent implements OnInit {
 
     this.productService.updateProduct(product.id, product).subscribe(
       (c: any) => {
-        alert!("Updated " + product.name);
+        alert!("Updated " + product.name + ".");
       }
     );
 
@@ -78,7 +78,7 @@ export class AdminComponent implements OnInit {
     let product = this.products[index];
     this.productService.deleteProduct(product.id).subscribe(
       (c: any) => {
-        alert!("deleted " + product.name);
+        alert!("Deleted " + product.name + ".");
       }
     );
     

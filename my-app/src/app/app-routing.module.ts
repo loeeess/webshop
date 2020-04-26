@@ -9,7 +9,6 @@ import { WebshopItemComponent } from './webshop/webshop-list/webshop-item/websho
 import { ProductResolver } from './webshop/product.resolver';
 import { BuyItemComponent } from './webshop/buy-item/buy-item.component';
 import { ShopCartComponent } from './shop-cart/shop-cart.component';
-import { ShopCartListComponent } from './shop-cart/shop-cart-list/shop-cart-list.component';
 import { AdminGuard } from './login-logout/admin.guard';
 import { AdminComponent } from './admin/admin.component';
 
@@ -21,7 +20,7 @@ const routes: Routes = [
     {path: ':id', component: BuyItemComponent, resolve: {item: ProductResolver}}
   ]},
   {path: 'cart', component: ShopCartComponent, children: [
-    {path: '', component: ShopCartListComponent}
+    {path: '', component: ShopCartComponent}
   ]},
   {path: 'admin', component: AdminComponent, canActivate: [AdminGuard]}
 ];

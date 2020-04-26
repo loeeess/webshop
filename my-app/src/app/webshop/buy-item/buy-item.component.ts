@@ -24,7 +24,7 @@ export class BuyItemComponent implements OnInit {
 
   addToShopCart() {
     if (this.amount < 1) {
-      alert("The amount must greater than 0!");
+      alert("The amount must greater than 0.");
       return;
     }
     this.shopcart.push(new BuyProduct(this.item, Number(this.amount)));

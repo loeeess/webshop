@@ -1,39 +1,26 @@
-<div class="container">
-  <div class="col-md-2">
-    <div class="row">
-      <form [formGroup]="newProductForm">
-        <input placeholder="name" type="text" [formControl]="newProductForm.controls['name']"><br>
-        <input placeholder="price" type="number" [formControl]="newProductForm.controls['price']"><br>
-        <input placeholder="description" type="text" [formControl]="newProductForm.controls['description']"><br>
-        <input placeholder="image url" type="text" [formControl]="newProductForm.controls['image']"><br>
-        <button type="submit" class="btn btn-success" (click)=createProduct()>Create product</button>
-      </form>
-      </div>
- </div>
+<div class="addcontainer">
+  <h2>add a new product</h2>
+    <form [formGroup]="newProductForm">
+      <input placeholder="Product name" type="text" [formControl]="newProductForm.controls['name']"><br>
+      <input placeholder="Price" type="number" [formControl]="newProductForm.controls['price']"><br>
+      <input placeholder="Description" type="text" [formControl]="newProductForm.controls['description']"><br>
+      <input placeholder="Image URL" type="text" [formControl]="newProductForm.controls['image']"><br>
+      <button type="submit" class="button" (click)=createProduct()>create product</button>
+    </form>
 </div>
 
-<div class="container">
-  <div *ngIf="products.length > 0"class="col-12">
-    <hr>
-    <div *ngFor="let product of products; let i = index">
-      <div class="row">
-        <div class="col-md-3">
-          <img class="buyImage" [src]="product.image">
-        </div>
-        <div class="col">
-          <h2>{{product.name}}</h2>
-          <div class="col-md2">
-            <form [formGroup]="forms[i]">
-              <input type="text" [formControl]="forms[i].controls['name']">
-              <input type="number" [formControl]="forms[i].controls['price']">
-              <!-- <input type="number" min="0" [formControl]="forms[i].controls['amount']"> -->
-              <button type="submit" class="btn btn-success" (click)="updateProduct(i)">Change</button>
-            </form>
-          </div>
-          <button class="btn btn-danger" (click)=deleteProduct(i)>Delete</button>
-        </div>
+<div *ngIf="products.length > 0">
+  <div class="container" *ngFor="let product of products; let i = index">
+    <img class="image" [src]="product.image">
+    <form class="productInput" [formGroup]="forms[i]">
+      <h2>{{product.name}}</h2>
+      <input type="text" [formControl]="forms[i].controls['name']">
+      <input type="number" [formControl]="forms[i].controls['price']">
+      <div class="buttons">
+        <button type="submit" class="button" (click)="updateProduct(i)">update product info</button>
+        <button class="button" (click)=deleteProduct(i)>delete product</button>
       </div>
-    </div>
-    <hr>
+    </form> 
   </div>
+</div>
 

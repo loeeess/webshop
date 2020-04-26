@@ -1,1 +1,26 @@
-<router-outlet></router-outlet>
+<div class="container" *ngIf="products.length > 0; else noProducts">
+    <div class="row" *ngFor="let product of products; let i = index">
+        <img class="image" [src]="product.product.image">
+        <h2>{{product.product.name}}</h2>
+        <!-- <input class="form-control" type="number" #amount (focusout)= "setAmount(amount)" value="1" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100"> -->
+        <form [formGroup]="forms[i]" (focusout)="onSubmit(i)">
+          <input type="number" min="0" [formControl]="forms[i].controls['amount']">
+          <button type="submit" class="button">change</button>
+        </form>
+        <h3>per item: €{{product.product.price | number : '1.2-2'}}</h3>
+        <h4>total: €{{ product.product.price * product.amount | number : '1.2-2'}} </h4>      
+        <button class="button" (click)=deleteProduct(i)>delete</button>  
+    </div>
+</div>
+
+<div class="checkout" *ngIf="products.length > 0">
+    <a href="https://paypal.me/Lcrama/ {{ totalPrice }}" class="button">check out</a>
+    <h2>total amount: €{{ totalPrice | number : '1.2-2'}}</h2>
+</div>
+
+<ng-template  #noProducts>
+    <div class="productless" #noProducts>
+      <h2>this shopping cart is emptier than space...</h2>
+      <button class="button" routerLink="/shop">buy something already.</button>
+    </div>
+</ng-template>

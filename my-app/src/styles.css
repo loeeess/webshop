@@ -7,10 +7,10 @@ body {
     font-style: italic;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   
     body{
-      padding-top: 30%;
+      padding-top: 20%;
     }
   }
 

@@ -18,7 +18,6 @@ import { ProductService } from './webshop/product.service';
 import { ProductResolver } from './webshop/product.resolver';
 import { BuyItemComponent } from './webshop/buy-item/buy-item.component';
 import { ShopCartComponent } from './shop-cart/shop-cart.component';
-import { ShopCartListComponent } from './shop-cart/shop-cart-list/shop-cart-list.component';
 import { HeaderComponent } from './header/header.component';
 import { AdminComponent } from './admin/admin.component';
 
@@ -32,7 +31,6 @@ import { AdminComponent } from './admin/admin.component';
     WebshopItemComponent,
     BuyItemComponent,
     ShopCartComponent,
-    ShopCartListComponent,
     HeaderComponent,
     AdminComponent
   ],
