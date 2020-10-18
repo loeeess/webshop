@@ -1,4 +1,10 @@
-CREATE TABLE user ()
+CREATE TABLE account (
+	id SERIAL PRIMARY KEY,
+	account_username VARCHAR(255),
+	account_email VARCHAR(255),
+	account_password VARCHAR(255),
+	account_role VARCHAR(255)
+);
 
 CREATE TABLE product (
 	id SERIAL PRIMARY KEY,
@@ -7,8 +13,6 @@ CREATE TABLE product (
     product_description VARCHAR(1024),
     product_image VARCHAR(1024)
 );
-
-
 
 INSERT INTO product
 VALUES
@@ -46,7 +50,7 @@ VALUES
 (DEFAULT, 'AirPods Case Pink Silicone', 9.95, 'Ultra Lightweight Protective Case For Your Apple AirPods.', 
 'https://ae01.alicdn.com/kf/HTB1fXDTbEKF3KVjSZFEq6xExFXaK.jpg');
 
-INSERT INTO user
+INSERT INTO account
 VALUES
 (DEFAULT, 'admin', 'admin@admin.com', 'admin', 'ADMIN'),
 (DEFAULT, 'user', 'user@user.com', 'user', 'USER');
