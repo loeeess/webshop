@@ -28,8 +28,7 @@ public class ApiGuiceModule extends AbstractModule {
 
     @Override
     protected void configure() {
-        //Deze moet blijkbaar empty zijn anders juicy code smell
-    }
+        }
 
     @Provides
     public SessionFactory provideSessionFactory() {

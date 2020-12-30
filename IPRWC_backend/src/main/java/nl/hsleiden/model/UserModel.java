@@ -3,20 +3,20 @@ package nl.hsleiden.model;
 import javax.persistence.*;
 import java.security.Principal;
 
-@Table(name = "users", schema = "public")
+@Table(name = "account", schema = "public")
 @Entity
 public class UserModel extends BaseModel implements Principal {
-    @Column(name = "user_username")
+    @Column(name = "account_username")
     private String username;
 
-    @Column(name = "user_email")
+    @Column(name = "account_email")
     private String email;
 
-    @Column(name = "user_password")
+    @Column(name = "account_password")
     private String password;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "user_role")
+    @Column(name = "account_role")
     private Role role;
 
     public UserModel(String username, String email, String password, Role role) {
