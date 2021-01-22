@@ -32,9 +32,6 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    console.log(this.formcontrols.username.value);
-    console.log(this.formcontrols.password.value);
-
     this.authservice.login(this.formcontrols.username.value, this.formcontrols.password.value)
       .pipe(first())
       .subscribe(data => {

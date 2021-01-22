@@ -17,7 +17,6 @@ export class ShopCartComponent implements OnInit {
 
   ngOnInit() {
     this.products = this.shopcart.getProducts();
-    console.log(this.products);
     this.updatePrice();
 
     for(const product of this.products) {

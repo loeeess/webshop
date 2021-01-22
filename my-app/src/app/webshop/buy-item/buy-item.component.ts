@@ -37,7 +37,6 @@ export class BuyItemComponent implements OnInit {
       alert("Buying nothing? Not cool.");
       return;
     }
-    console.log("SET amount");
     this.amount = amount.value;
   }
 }

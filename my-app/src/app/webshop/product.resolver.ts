@@ -9,7 +9,6 @@ export class ProductResolver implements Resolve<Observable<Product>> {
     constructor(private productService: ProductService) {}
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Observable<Product>> | Promise<Observable<Product>> | Observable<Product> {
-        console.log("Resolver: ", route.params.id);
         return this.productService.fetchProduct(route.params.id);
     }
 }

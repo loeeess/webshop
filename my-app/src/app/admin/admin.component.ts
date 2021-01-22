@@ -30,7 +30,6 @@ export class AdminComponent implements OnInit {
       (products) => {
         this.products = products;
         for(var product of this.products) {
-          console.log(product)
           this.forms.push(this.fb.group({
             'name': product.name,
             'price': product.price,

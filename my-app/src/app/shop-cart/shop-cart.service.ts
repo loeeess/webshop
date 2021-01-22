@@ -26,9 +26,6 @@ export class ShopCartService {
         return;
       }
     }
-
     this.products.push(push_product);
-
-    console.log(this.products);
   }
 }

@@ -12,7 +12,5 @@ export class WebshopItemComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    console.log("ITEM:" + this.index);
-  }
+  ngOnInit() {}
 }
