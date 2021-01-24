@@ -1,11 +1,7 @@
-# Login info
+# Webshop aesthetically
 
-user (role: user)
-* email: user@user.com
-* password: user
+A webshop made with Angular and Dropwizard. For educational purposes.
 
-admin (role: admin)
-* email: admin@admin.com
-* password: admin
+The webshop can be found [here](loes-app.eu)
 
-
+Enjoy :sparkles:
