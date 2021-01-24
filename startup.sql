@@ -50,6 +50,9 @@ VALUES
 (DEFAULT, 'AirPods Case Pink Silicone', 9.95, 'Ultra Lightweight Protective Case For Your Apple AirPods.', 
 'https://ae01.alicdn.com/kf/HTB1fXDTbEKF3KVjSZFEq6xExFXaK.jpg');
 
+/*
+Please note that these accounts are made for testing purposes. These username/password combinations are not recommended due to a lack of security.
+*/
 INSERT INTO account
 VALUES
 (DEFAULT, 'admin', 'admin@admin.com', 'admin', 'ADMIN'),
