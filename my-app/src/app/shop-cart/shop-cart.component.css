@@ -63,3 +63,18 @@ h2, h3, h5 {
     color: white;
     text-shadow:    3px 3px #e22d8b;
 }
+
+@media only screen and (max-width: 670px) {
+    .container {
+      margin-top: 4em;
+    }
+
+    .productless {
+        margin-top: 4em;
+        padding: 1em;
+    }
+
+    input {
+        width: 100%;
+    }
+}
