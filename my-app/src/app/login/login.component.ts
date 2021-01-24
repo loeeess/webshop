@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['/shop']);
       },
       error => {
-        console.log("Something went wrong in the authservice!: " + error);
+        console.log("An error occurred: " + error);
       });
   }
 }
