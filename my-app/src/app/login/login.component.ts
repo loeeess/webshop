@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['/shop']);
       },
       error => {
-        console.log("An error occurred: " + error);
+        alert("Your e-mail and password do not match, try again.");
       });
   }
 }

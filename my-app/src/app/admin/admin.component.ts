@@ -32,6 +32,7 @@ export class AdminComponent implements OnInit {
         for(var product of this.products) {
           this.forms.push(this.fb.group({
             'name': product.name,
+            'description': product.description,
             'price': product.price,
           }));
         }
@@ -54,12 +55,14 @@ export class AdminComponent implements OnInit {
     this.products.push(product);
     this.forms.push(this.fb.group({
       'name': product.name,
+      'description': product.description,
       'price': product.price,
     }))
   }
   
   updateProduct(index: number) {
     this.products[index].name = this.forms[index].value['name'];
+    this.products[index].description = this.forms[index].value['description'];
     this.products[index].price = this.forms[index].value['price'];
 
     let product = this.products[index];
